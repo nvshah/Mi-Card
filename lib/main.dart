@@ -44,54 +44,50 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              //Horizontal Line
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
               //Phone
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                child: ListTile(
+                  leading:  Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       '+91-7046853655',
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontSize: 20.0,
                         fontFamily: 'Source Sans Pro',
                       ),
-                    )
-                  ],
+                    ),
                 ),
               ),
               //Email
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                child: ListTile(
+                  leading:  Icon(
                       Icons.email,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       'nipunshah6776@gmail.com',
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontSize: 20.0,
                         fontFamily: 'Source Sans Pro',
                       ),
-                    )
-                  ],
+                    ),
                 ),
               ),
             ],
